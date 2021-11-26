@@ -1,0 +1,886 @@
+Microsoft Windows [Version 10.0.19042.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LENOVO>mongo
+MongoDB shell version v5.0.4
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("aebc031a-a82e-4578-8534-62325ef11aeb") }
+MongoDB server version: 5.0.4
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-22T15:22:01.261+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin      0.000GB
+assinment  0.000GB
+config     0.000GB
+films      0.000GB
+local      0.000GB
+movies     0.000GB
+test       0.000GB
+> use films
+switched to db films
+> show collections
+fllm_name
+> db.film_name.find().pretty()
+> db.film_name.find().pretty()
+> db.film_name.find().pretty()
+> db.film_name.find().pretty()
+> db.fllm_name.find().pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b52"),
+        "id" : 6,
+        "movie_name" : "Swamp Thing",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2003,
+        "budget" : 12122
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b53"),
+        "id" : 7,
+        "movie_name" : "Supporting Characters",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 19270
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b55"),
+        "id" : 9,
+        "movie_name" : "Rocket Science",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1998,
+        "budget" : 10130
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b56"),
+        "id" : 10,
+        "movie_name" : "From Hell",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 14970
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b57"),
+        "id" : 11,
+        "movie_name" : "Mr. Wrong",
+        "movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : 13993
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b58"),
+        "id" : 12,
+        "movie_name" : "Unmistaken Child",
+        "movie_genre" : "Documentary",
+        "production_year" : 2008,
+        "budget" : 16412
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b59"),
+        "id" : 13,
+        "movie_name" : "Cheech & Chong's Nice Dreams",
+        "movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : 16239
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5a"),
+        "id" : 14,
+        "movie_name" : "Action Jackson",
+        "movie_genre" : "Action|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : 9904
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5b"),
+        "id" : 15,
+        "movie_name" : "Willow",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 2002,
+        "budget" : 9199
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5c"),
+        "id" : 16,
+        "movie_name" : "Into the Forest of Fireflies' Light",
+        "movie_genre" : "Animation|Drama|Fantasy",
+        "production_year" : 2006,
+        "budget" : 16140
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5d"),
+        "id" : 17,
+        "movie_name" : "Architect, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9248
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5e"),
+        "id" : 18,
+        "movie_name" : "Children of the Corn II: The Final Sacrifice",
+        "movie_genre" : "Horror",
+        "production_year" : 1998,
+        "budget" : 15560
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5f"),
+        "id" : 19,
+        "movie_name" : "Back to 1942 ",
+        "movie_genre" : "Drama|IMAX",
+        "production_year" : 2011,
+        "budget" : 19644
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b60"),
+        "id" : 20,
+        "movie_name" : "Strapped",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 13197
+}
+Type "it" for more
+> db.fllm_name.find({movie_name:{$eq:"Strapped"}}).pretty
+function() {
+    this._prettyShell = true;
+    return this;
+}
+> db.fllm_name.find({movie_name:{$eq:"Strapped"}}).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b60"),
+        "id" : 20,
+        "movie_name" : "Strapped",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 13197
+}
+> db.fllm_name.find({movie_name:{$ne:"Strapped"}}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+> db.fllm_name.find({budget:{$ge:1900}}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $ge",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.fllm_name.find({budget:{$ge:19000}}).limit(5).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $ge",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.fllm_name.find({budget:{$gte:19000}}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b53"),
+        "id" : 7,
+        "movie_name" : "Supporting Characters",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 19270
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5f"),
+        "id" : 19,
+        "movie_name" : "Back to 1942 ",
+        "movie_genre" : "Drama|IMAX",
+        "production_year" : 2011,
+        "budget" : 19644
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b63"),
+        "id" : 23,
+        "movie_name" : "Dam Busters, The",
+        "movie_genre" : "Action|Drama|War",
+        "production_year" : 1967,
+        "budget" : 19213
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b6d"),
+        "id" : 33,
+        "movie_name" : "Kahaani",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 1996,
+        "budget" : 19906
+}
+> db.fllm_name.find({budget:{$lte:10000}}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5a"),
+        "id" : 14,
+        "movie_name" : "Action Jackson",
+        "movie_genre" : "Action|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : 9904
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5b"),
+        "id" : 15,
+        "movie_name" : "Willow",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 2002,
+        "budget" : 9199
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5d"),
+        "id" : 17,
+        "movie_name" : "Architect, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9248
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b61"),
+        "id" : 21,
+        "movie_name" : "Kolka Cool",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2013,
+        "budget" : 9308
+}
+> db.fllm_name.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]).limit(5).pretty()
+... db.fllm_name.find({budget:{$lte:10000}}).limit(5).pretty()
+...
+...
+>
+>
+> db.movie_data.find({production_year:{$gt:2000 }}).limit(5).pretty()
+> db.fllm_name.find({$and:[{"production_year":{$gt:2000}},{budget:{$gt:5000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b52"),
+        "id" : 6,
+        "movie_name" : "Swamp Thing",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2003,
+        "budget" : 12122
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b53"),
+        "id" : 7,
+        "movie_name" : "Supporting Characters",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 19270
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+>
+> db.fllm_name.find({$or:[{"production_year":{$gt:2000}},{budget:{$gt:5000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+> db.fllm_name.find({$or:[!{"production_year":{$gt:2000}},!{budget:{$gt:5000}}]}).limit(5).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$or/$and/$nor entries need to be full objects",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.fllm_name.find({$or:[{"production_year":{$gt:2000}},{budget:{$gt:5000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+> db.fllm_name.find({$or:[{$not:[{production_year:{$gt:2000}}}],$not:[{budget:{$gt:5000}}]}).limit(5).pretty()
+
+>
+>
+>
+> --- > show dbs
+uncaught exception: SyntaxError: expected expression, got '-' :
+@(shell):1:2
+> db.fllm_name.find({}).sort({production_year:-1,movie_name:1}).limit(5).preclstty()
+uncaught exception: TypeError: db.fllm_name.find(...).sort(...).limit(...).preclstty is not a function :
+@(shell):1:1
+>
+>
+>
+>
+> db.fllm_name.find({}).sort({production_year:-1,movie_name:1}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b68"),
+        "id" : 28,
+        "movie_name" : "Crystal Ball, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2013,
+        "budget" : 14227
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b61"),
+        "id" : 21,
+        "movie_name" : "Kolka Cool",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2013,
+        "budget" : 9308
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5a"),
+        "id" : 14,
+        "movie_name" : "Action Jackson",
+        "movie_genre" : "Action|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : 9904
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52bab"),
+        "id" : 95,
+        "movie_name" : "Gay Bed and Breakfast of Terror, The",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 2012,
+        "budget" : 12081
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52bb0"),
+        "id" : 100,
+        "movie_name" : "Haunted Strangler, The (Grip of the Strangler)",
+        "movie_genre" : "Crime|Horror|Mystery",
+        "production_year" : 2012,
+        "budget" : 17918
+}
+> > db.fllm_name.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:10000'}}]}).limit(5).pretty()
+uncaught exception: SyntaxError: expected expression, got '>' :
+@(shell):1:0
+> db.fllm_name.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:10000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b52"),
+        "id" : 6,
+        "movie_name" : "Swamp Thing",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2003,
+        "budget" : 12122
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b53"),
+        "id" : 7,
+        "movie_name" : "Supporting Characters",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 19270
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+> db.fllm_name.find({$or:[{"production_year":{$ne:2000}},{"budget":{$ne:10000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+> db.fllm_name.find({$nor:[{"production_year":{$gt:2000}},{"budget":{$gt:10000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b67"),
+        "id" : 27,
+        "movie_name" : "Mid-August Lunch (Pranzo di ferragosto)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1998,
+        "budget" : 9609
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b8b"),
+        "id" : 63,
+        "movie_name" : "Monte Walsh",
+        "movie_genre" : "Action|Adventure|Western",
+        "production_year" : 1998,
+        "budget" : 9595
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b8e"),
+        "id" : 66,
+        "movie_name" : "Boogie Woogie",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1995,
+        "budget" : 9077
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b9e"),
+        "id" : 82,
+        "movie_name" : "For Love or Money",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1994,
+        "budget" : 9197
+}
+> db.fllm_name.find({$and:[{"production_year":{$gt:2000}},{"production_year":{$lt:2010}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b52"),
+        "id" : 6,
+        "movie_name" : "Swamp Thing",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2003,
+        "budget" : 12122
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b57"),
+        "id" : 11,
+        "movie_name" : "Mr. Wrong",
+        "movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : 13993
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b58"),
+        "id" : 12,
+        "movie_name" : "Unmistaken Child",
+        "movie_genre" : "Documentary",
+        "production_year" : 2008,
+        "budget" : 16412
+}
+> db.fllm_name.find({$or:[{"production_year":{$ne:2000}},{"budget":{$ne:10000}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4d"),
+        "id" : 1,
+        "movie_name" : "Eight Iron Men",
+        "movie_genre" : "Drama|War",
+        "production_year" : 1995,
+        "budget" : 12754
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4e"),
+        "id" : 2,
+        "movie_name" : "Krippendorf's Tribe",
+        "movie_genre" : "Comedy",
+        "production_year" : 1984,
+        "budget" : 16301
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b4f"),
+        "id" : 3,
+        "movie_name" : "Unintentional Kidnapping of Mrs. Elfriede Ott, The (Die Unabsichtliche Entführung der Frau Elfriede Ott)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14162
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b50"),
+        "id" : 4,
+        "movie_name" : "Confessions of a Pop Performer",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9035
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+> db.fllm_name.find({$and:[{"production_year":{$gt:2000}},{"production_year":{$lt:2010}}]}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b51"),
+        "id" : 5,
+        "movie_name" : "Capture of Bigfoot, The",
+        "movie_genre" : "Adventure|Horror|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 10729
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b52"),
+        "id" : 6,
+        "movie_name" : "Swamp Thing",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2003,
+        "budget" : 12122
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b54"),
+        "id" : 8,
+        "movie_name" : "Autumn Leaves",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 19942
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b57"),
+        "id" : 11,
+        "movie_name" : "Mr. Wrong",
+        "movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : 13993
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b58"),
+        "id" : 12,
+        "movie_name" : "Unmistaken Child",
+        "movie_genre" : "Documentary",
+        "production_year" : 2008,
+        "budget" : 16412
+}
+> db.fllm_name.find({}).sort({production_year:-1,movie_name:1}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b68"),
+        "id" : 28,
+        "movie_name" : "Crystal Ball, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2013,
+        "budget" : 14227
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b61"),
+        "id" : 21,
+        "movie_name" : "Kolka Cool",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2013,
+        "budget" : 9308
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b5a"),
+        "id" : 14,
+        "movie_name" : "Action Jackson",
+        "movie_genre" : "Action|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : 9904
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52bab"),
+        "id" : 95,
+        "movie_name" : "Gay Bed and Breakfast of Terror, The",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 2012,
+        "budget" : 12081
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52bb0"),
+        "id" : 100,
+        "movie_name" : "Haunted Strangler, The (Grip of the Strangler)",
+        "movie_genre" : "Crime|Horror|Mystery",
+        "production_year" : 2012,
+        "budget" : 17918
+}
+> db.fllm_name.find({}).sort({production_year:-1,movie_name:1}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b53"),
+        "id" : 7,
+        "movie_name" : "Supporting Characters",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 19270
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52ba9"),
+        "id" : 93,
+        "movie_name" : "Under the Stars (Bajo las estrellas)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 11264
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b78"),
+        "id" : 44,
+        "movie_name" : "Viva Las Vegas",
+        "movie_genre" : "Comedy|Musical|Romance",
+        "production_year" : 2011,
+        "budget" : 11173
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b97"),
+        "id" : 75,
+        "movie_name" : "We'll Never Have Paris",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2011,
+        "budget" : 9008
+}
+{
+        "_id" : ObjectId("619e6f2d30c3d6f942e52b6a"),
+        "id" : 30,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "budget" : 13635
+}
+>
+
